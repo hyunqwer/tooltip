@@ -1,0 +1,44 @@
+/* 테이블 스타일 */
+.book-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.book-table th, .book-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* 약어 스타일 */
+.book-abbreviation {
+    font-weight: bold;
+    color: #333; /* 기본 색상 */
+    background-color: #f0f0f0; /* 부드러운 배경 색상 */
+    padding: 3px 6px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; /* 부드러운 전환 효과 */
+}
+
+/* 마우스오버 효과 */
+.book-abbreviation:hover {
+    background-color: #333; /* 강조 색상 */
+    color: #fff; /* 텍스트 색상 반전 */
+    transform: scale(1.05); /* 살짝 확대 효과 */
+    cursor: pointer;
+}
+
+/* 말풍선 스타일 */
+.fullname-tooltip {
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    display: none;
+    white-space: nowrap;
+    z-index: 10;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* 말풍선 그림자 */
+}
